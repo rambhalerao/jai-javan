@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tom fitness using flex box</title>
+    <style>
+        body {
+            background-image: url('img/background.jpg');
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+
+        }
+
+        .header {
+            height: 200px;
+        }
+
+        .container {
+            display: flex;
+            border: 2px solid red;
+            height: 200px;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            
+
+
+        }
+
+        .navbar {
+            
+            border: blue 2px solid;
+            height: 60px;
+        }
+
+        .navbar img {
+            width: 60%;
+            height: 100%;
+        }
+
+        .navbar p {
+            font-weight: bolder;
+
+
+        }
+        .navbar li {
+            
+            display:inline;
+            list-style: none;
+            font-weight: bolder;
+            
+        }
+        .navbar li a{
+            text-decoration: none;
+            margin:5px;
+            
+        }
+        .navbar li a:hover{
+            background-color: grey;
+            color:red;
+            border-radius: 5px;
+        }
+        .btn{
+           
+            font-size: 16px;
+            border-radius: 5px;
+            border: black solid 3px;
+        }
+        .btn:hover{
+            background-color: grey;
+            color:red;
+            border-radius: 5px;
+        }
+        #box1{
+            border-radius: 3px;
+        }
+        #box2{
+            border-radius: 3px;
+            margin-left:-6% ;
+            padding: 3px;
+            
+
+        }
+
+        #box3{
+            border-radius: 3px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar" id="box1">
+                <img src="img/logo.png" alt="image of logo">
+                <p>Tom Fitness</p>
+
+            </div>
+            <div class="navbar" id="box2">
+                <ul>
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#">Fitness calc</a> </li>
+                    <li> <a href="#"> Contact us </a> </li>
+                    <li> <a href="#"> Locality</a> </li>
+                </ul>
+
+            </div>
+            <div class="navbar" id="box3"><button class="btn">Health plan
+
+            </button>
+            <button class="btn">
+                Workouts
+
+            </button></div>
+        </div>
+    </header>
+
+</body>
+
+</html>
